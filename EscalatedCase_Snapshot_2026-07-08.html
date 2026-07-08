@@ -1,0 +1,730 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Snapshot — Escalated Case | 2026-06-28 s/d 2026-07-04</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+*{box-sizing:border-box;}html,body{margin:0;padding:0;}
+body{background:#F3F5FB;color:#0F1B33;font-family:'Inter',sans-serif;-webkit-font-smoothing:antialiased;display:flex;flex-direction:column;min-height:100vh;}
+.ro-banner{background:linear-gradient(135deg,#1B3499,#2A4DD0,#3E63E8);color:#fff;padding:12px 28px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:10px;position:sticky;top:0;z-index:100;box-shadow:0 2px 12px rgba(0,0,0,0.18);}
+.ro-left{display:flex;align-items:center;gap:12px;}
+.ro-title{font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:15px;}
+.ro-sub{font-size:11px;opacity:.7;margin-top:1px;}
+.ro-pill{background:rgba(255,255,255,0.14);border:1px solid rgba(255,255,255,0.22);border-radius:999px;padding:4px 12px;font-size:11.5px;display:inline-flex;align-items:center;gap:5px;}
+.ro-pill b{color:#FDE68A;}
+.wrap{display:flex;flex:1;}
+.sidebar{width:236px;flex-shrink:0;background:#0F1B33;color:#fff;display:flex;flex-direction:column;padding:22px 16px;min-height:100vh;}
+.brand{display:flex;align-items:center;gap:10px;padding:0 8px 22px;border-bottom:1px solid rgba(255,255,255,0.08);margin-bottom:18px;}
+.bm{width:34px;height:34px;border-radius:9px;background:linear-gradient(155deg,#3E63E8,#2A4DD0 55%,#1B3499);display:flex;align-items:center;justify-content:center;font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:15px;color:#fff;}
+.brand strong{display:block;font-family:'Space Grotesk',sans-serif;font-size:14px;}
+.brand span{display:block;font-size:10px;color:rgba(255,255,255,0.45);text-transform:uppercase;letter-spacing:.6px;margin-top:1px;}
+nav{display:flex;flex-direction:column;gap:3px;}
+.nb{display:flex;align-items:center;gap:10px;padding:10px 12px;border-radius:10px;color:rgba(255,255,255,0.68);border:none;background:transparent;width:100%;text-align:left;font-size:13px;font-weight:500;cursor:pointer;font-family:'Inter',sans-serif;transition:background .15s,color .15s;}
+.nb:hover{background:rgba(255,255,255,0.06);color:#fff;}
+.nb.on{background:rgba(255,255,255,0.1);color:#fff;}
+.nb .d{width:6px;height:6px;border-radius:50%;background:currentColor;opacity:.5;flex-shrink:0;}
+.nb.on .d{background:#5C7CF2;opacity:1;}
+.ro-tag{font-size:10.5px;color:rgba(255,255,255,0.3);text-align:center;padding:14px 0 0;border-top:1px solid rgba(255,255,255,0.07);margin-top:auto;}
+.main{flex:1;min-width:0;padding:22px 32px 60px;}
+.view{display:none;}.view.on{display:block;}
+.topbar{display:flex;align-items:flex-start;justify-content:space-between;margin-bottom:22px;gap:16px;flex-wrap:wrap;}
+.topbar h1{font-family:'Space Grotesk',sans-serif;font-size:22px;margin:0 0 4px;letter-spacing:-.2px;}
+.topbar p{margin:0;color:#4B5870;font-size:13px;}
+.pill{display:inline-flex;align-items:center;gap:6px;background:#fff;border:1px solid #E4E8F2;padding:6px 12px;border-radius:999px;font-size:12px;color:#4B5870;}
+.pill b{color:#0F1B33;font-weight:600;}
+.strip{display:grid;grid-template-columns:repeat(5,1fr);gap:1px;background:#E4E8F2;border:1px solid #E4E8F2;border-radius:14px;overflow:hidden;margin-bottom:20px;box-shadow:0 1px 2px rgba(15,27,51,0.04),0 6px 18px -10px rgba(15,27,51,0.1);}
+.sc{background:#fff;padding:17px 20px;}
+.sc .lb{font-size:11px;text-transform:uppercase;letter-spacing:.6px;color:#4B5870;margin-bottom:7px;display:flex;align-items:center;gap:5px;}
+.sc .vl{font-family:'Space Grotesk',sans-serif;font-size:24px;font-weight:600;letter-spacing:-.3px;}
+.sc .sb{font-size:11.5px;color:#4B5870;margin-top:4px;}
+.sc.ac{background:linear-gradient(155deg,#1B3499,#2A4DD0 60%,#3E63E8);color:#fff;}
+.sc.ac .lb,.sc.ac .sb{color:rgba(255,255,255,.6);}
+.g2{display:grid;grid-template-columns:1.3fr 1fr;gap:16px;margin-bottom:16px;}
+.g2eq{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-bottom:16px;}
+.card{background:#fff;border:1px solid #E4E8F2;border-radius:14px;padding:18px 20px;box-shadow:0 1px 2px rgba(15,27,51,0.04),0 6px 18px -10px rgba(15,27,51,0.1);}
+.ch{display:flex;align-items:center;justify-content:space-between;margin-bottom:14px;}
+.ch h3{font-family:'Space Grotesk',sans-serif;font-size:14px;margin:0;font-weight:600;}
+.ch .mt{font-size:11.5px;color:#4B5870;}
+.dw{display:flex;align-items:center;gap:20px;}
+.dn{width:124px;height:124px;border-radius:50%;flex-shrink:0;display:flex;align-items:center;justify-content:center;position:relative;}
+.dn::after{content:'';position:absolute;width:76px;height:76px;border-radius:50%;background:#fff;}
+.dc{position:relative;z-index:1;text-align:center;}
+.dc b{font-family:'Space Grotesk',sans-serif;font-size:18px;display:block;}
+.dc span{font-size:9px;color:#4B5870;text-transform:uppercase;letter-spacing:.5px;}
+.li{display:flex;align-items:center;gap:8px;font-size:12.5px;margin-bottom:8px;}
+.li .sw{width:9px;height:9px;border-radius:3px;flex-shrink:0;}
+.li b{margin-left:auto;font-family:monospace;font-size:12px;padding-left:12px;}
+.tbwrap{overflow:auto;border:1px solid #E4E8F2;border-radius:10px;}
+.tbl{border-collapse:collapse;width:100%;min-width:860px;}
+.tbl thead th{background:#FAFBFE;font-size:10.5px;text-transform:uppercase;letter-spacing:.5px;color:#4B5870;padding:10px 13px;border-bottom:1px solid #E4E8F2;text-align:left;white-space:nowrap;font-weight:600;}
+.tbl tbody td{padding:10px 13px;font-size:12.5px;border-bottom:1px solid #EEF1F8;color:#0F1B33;vertical-align:top;}
+.tbl tbody tr:last-child td{border-bottom:none;}
+.tbl tbody tr:hover td{background:#FAFBFE;}
+.stl{font-family:'Space Grotesk',sans-serif;font-weight:600;font-size:12.5px;margin:16px 0 10px;display:flex;align-items:center;gap:8px;}
+.overdue-c{border-color:#FBBF24!important;background:linear-gradient(180deg,#FFFBEB,#fff 65%)!important;}
+.sep{border-top:1px dashed #E4E8F2;margin-top:16px;padding-top:16px;}
+.toolbar{display:flex;align-items:center;gap:12px;margin-bottom:14px;flex-wrap:wrap;}
+.seg{display:flex;background:#fff;border:1px solid #E4E8F2;border-radius:10px;padding:3px;gap:2px;}
+.sb{border:none;background:transparent;padding:7px 14px;border-radius:7px;font-size:12.5px;font-weight:500;color:#4B5870;cursor:pointer;font-family:'Inter',sans-serif;display:flex;align-items:center;gap:6px;transition:background .15s,color .15s;}
+.sb:hover{background:#F3F5FB;color:#0F1B33;}
+.sb.on{background:#0F1B33;color:#fff;}
+.sb .cnt{font-family:monospace;font-size:11px;opacity:.75;}
+.sb.on .cnt{opacity:1;}
+.info-lbl{font-size:12px;color:#4B5870;}
+.no-result{padding:40px;text-align:center;color:#4B5870;font-size:13px;background:#fff;border:1px solid #E4E8F2;border-radius:14px;}</style>
+</head>
+<body>
+
+<div class="ro-banner">
+  <div class="ro-left">
+    <span style="font-size:22px;">🔒</span>
+    <div><div class="ro-title">Escalated Case — Snapshot</div><div class="ro-sub">Read-only · Tidak dapat diubah</div></div>
+  </div>
+  <div style="display:flex;gap:8px;flex-wrap:wrap;align-items:center;">
+    <span class="ro-pill">📅 <b>2026-06-28 s/d 2026-07-04</b></span>
+    <span class="ro-pill">📁 CS: <b>15</b> · Settlement: <b>16</b></span>
+    <span class="ro-pill">🕐 <b>Rabu, 08 Juli 2026 pukul 11.14</b></span>
+  </div>
+</div>
+
+<div class="wrap">
+<aside class="sidebar">
+  <div class="brand">
+    <div class="bm">EC</div>
+    <div><strong>Escalated Case</strong><span>Snapshot</span></div>
+  </div>
+  <nav>
+    <button class="nb on" onclick="sw('dash',this)"><span class="d"></span>Dashboard Master</button>
+    <button class="nb" onclick="sw('cs',this)"><span class="d"></span>CS to Settlement</button>
+    <button class="nb" onclick="sw('st',this)"><span class="d"></span>Settlement to CS</button>
+  </nav>
+  <div class="ro-tag">🔒 READ ONLY SNAPSHOT</div>
+</aside>
+
+<main class="main">
+
+<!-- ===== DASHBOARD ===== -->
+<section class="view on" id="v-dash">
+  <div class="topbar">
+    <div><h1>Dashboard Master</h1><p>Snapshot · Rentang: <b>2026-06-28 s/d 2026-07-04</b></p></div>
+    <div style="display:flex;gap:8px;flex-wrap:wrap;">
+      <span class="pill">📊 <b>31</b> total case</span>
+      <span class="pill" style="color:#D69A1F;">⏳ <b>1</b> pending</span>
+    </div>
+  </div>
+
+  <div class="strip">
+    <div class="sc ac"><div class="lb">Total Case</div><div class="vl">31</div><div class="sb">15 CS · 16 Settlement</div></div>
+    <div class="sc"><div class="lb"><span style="width:7px;height:7px;border-radius:2px;background:#0E9E86;display:inline-block;"></span>Done</div><div class="vl">29</div><div class="sb">94% selesai</div></div>
+    <div class="sc"><div class="lb"><span style="width:7px;height:7px;border-radius:2px;background:#D69A1F;display:inline-block;"></span>Pending</div><div class="vl">1</div><div class="sb">3% menunggu</div></div>
+    <div class="sc"><div class="lb"><span style="width:7px;height:7px;border-radius:2px;background:#D6483F;display:inline-block;"></span>Closed</div><div class="vl">1</div><div class="sb">3% ditutup</div></div>
+    <div class="sc"><div class="lb">Total Nilai IDR</div><div class="vl" style="font-size:18px;">Rp1.2M</div><div class="sb">Estimasi case bernilai IDR</div></div>
+  </div>
+
+  <div class="g2">
+    <div class="card"><div class="ch"><h3>Case per Kategori</h3><span class="mt">Diurutkan terbanyak</span></div>
+    <div style="display:flex;align-items:center;gap:10px;margin-bottom:11px;">
+      <div style="width:200px;flex-shrink:0;font-size:12.5px;display:flex;justify-content:space-between;">
+        <span>Deposit IDR</span><span style="font-family:monospace;color:#4B5870;font-size:11.5px;">14</span>
+      </div>
+      <div style="flex:1;height:9px;background:#EEF1F8;border-radius:5px;overflow:hidden;">
+        <div style="width:100%;height:100%;border-radius:5px;background:linear-gradient(90deg,#3E63E8,#2A4DD0);"></div>
+      </div>
+    </div>
+    <div style="display:flex;align-items:center;gap:10px;margin-bottom:11px;">
+      <div style="width:200px;flex-shrink:0;font-size:12.5px;display:flex;justify-content:space-between;">
+        <span>Refund IDR</span><span style="font-family:monospace;color:#4B5870;font-size:11.5px;">8</span>
+      </div>
+      <div style="flex:1;height:9px;background:#EEF1F8;border-radius:5px;overflow:hidden;">
+        <div style="width:57%;height:100%;border-radius:5px;background:linear-gradient(90deg,#3E63E8,#2A4DD0);"></div>
+      </div>
+    </div>
+    <div style="display:flex;align-items:center;gap:10px;margin-bottom:11px;">
+      <div style="width:200px;flex-shrink:0;font-size:12.5px;display:flex;justify-content:space-between;">
+        <span>Withdraw IDR</span><span style="font-family:monospace;color:#4B5870;font-size:11.5px;">5</span>
+      </div>
+      <div style="flex:1;height:9px;background:#EEF1F8;border-radius:5px;overflow:hidden;">
+        <div style="width:36%;height:100%;border-radius:5px;background:linear-gradient(90deg,#3E63E8,#2A4DD0);"></div>
+      </div>
+    </div>
+    <div style="display:flex;align-items:center;gap:10px;margin-bottom:11px;">
+      <div style="width:200px;flex-shrink:0;font-size:12.5px;display:flex;justify-content:space-between;">
+        <span>Receive Coin Listed (Settlement)</span><span style="font-family:monospace;color:#4B5870;font-size:11.5px;">2</span>
+      </div>
+      <div style="flex:1;height:9px;background:#EEF1F8;border-radius:5px;overflow:hidden;">
+        <div style="width:14%;height:100%;border-radius:5px;background:linear-gradient(90deg,#3E63E8,#2A4DD0);"></div>
+      </div>
+    </div>
+    <div style="display:flex;align-items:center;gap:10px;margin-bottom:11px;">
+      <div style="width:200px;flex-shrink:0;font-size:12.5px;display:flex;justify-content:space-between;">
+        <span>Deposit USD</span><span style="font-family:monospace;color:#4B5870;font-size:11.5px;">1</span>
+      </div>
+      <div style="flex:1;height:9px;background:#EEF1F8;border-radius:5px;overflow:hidden;">
+        <div style="width:7%;height:100%;border-radius:5px;background:linear-gradient(90deg,#3E63E8,#2A4DD0);"></div>
+      </div>
+    </div>
+    <div style="display:flex;align-items:center;gap:10px;margin-bottom:11px;">
+      <div style="width:200px;flex-shrink:0;font-size:12.5px;display:flex;justify-content:space-between;">
+        <span>Send Coin</span><span style="font-family:monospace;color:#4B5870;font-size:11.5px;">1</span>
+      </div>
+      <div style="flex:1;height:9px;background:#EEF1F8;border-radius:5px;overflow:hidden;">
+        <div style="width:7%;height:100%;border-radius:5px;background:linear-gradient(90deg,#3E63E8,#2A4DD0);"></div>
+      </div>
+    </div></div>
+    <div class="card"><div class="ch"><h3>Komposisi Status</h3><span class="mt">Seluruh flow</span></div>
+      <div class="dw">
+        <div class="dn" style="background:conic-gradient(#0E9E86 0deg 338.40000000000003deg,#D69A1F 338.40000000000003deg 349.2deg,#D6483F 349.2deg 360deg);"><div class="dc"><b>94%</b><span>Done</span></div></div>
+        <div><div class="li"><span class="sw" style="background:#0E9E86;"></span>Done<b>29</b></div><div class="li"><span class="sw" style="background:#D69A1F;"></span>Pending<b>1</b></div><div class="li"><span class="sw" style="background:#D6483F;"></span>Closed<b>1</b></div></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="g2eq">
+    <div class="card"><div class="ch"><h3>CS → Settlement</h3><span class="mt">15 case</span></div><div style="display:flex;align-items:center;gap:10px;margin-bottom:11px;"><span style="width:120px;font-size:12.5px;">Done</span><div style="flex:1;height:9px;background:#EEF1F8;border-radius:5px;overflow:hidden;"><div style="width:93.33333333333333%;height:100%;background:linear-gradient(90deg,#0E9E86,#11B796);border-radius:5px;"></div></div><span style="font-family:monospace;font-size:12px;width:28px;text-align:right;">14</span></div><div style="display:flex;align-items:center;gap:10px;margin-bottom:11px;"><span style="width:120px;font-size:12.5px;">Pending</span><div style="flex:1;height:9px;background:#EEF1F8;border-radius:5px;overflow:hidden;"><div style="width:0%;height:100%;background:linear-gradient(90deg,#D69A1F,#E8B448);border-radius:5px;"></div></div><span style="font-family:monospace;font-size:12px;width:28px;text-align:right;">0</span></div><div style="display:flex;align-items:center;gap:10px;margin-bottom:11px;"><span style="width:120px;font-size:12.5px;">Closed</span><div style="flex:1;height:9px;background:#EEF1F8;border-radius:5px;overflow:hidden;"><div style="width:6.666666666666667%;height:100%;background:linear-gradient(90deg,#D6483F,#E36F67);border-radius:5px;"></div></div><span style="font-family:monospace;font-size:12px;width:28px;text-align:right;">1</span></div><div style="padding-top:12px;border-top:1px dashed #E4E8F2;display:flex;justify-content:space-between;font-size:12.5px;color:#4B5870;"><span>Total Nilai</span><b style="font-family:monospace;color:#0F1B33;">Rp510.2jt</b></div></div>
+    <div class="card"><div class="ch"><h3>Settlement → CS</h3><span class="mt">16 case</span></div><div style="display:flex;align-items:center;gap:10px;margin-bottom:11px;"><span style="width:120px;font-size:12.5px;">Done</span><div style="flex:1;height:9px;background:#EEF1F8;border-radius:5px;overflow:hidden;"><div style="width:93.75%;height:100%;background:linear-gradient(90deg,#0E9E86,#11B796);border-radius:5px;"></div></div><span style="font-family:monospace;font-size:12px;width:28px;text-align:right;">15</span></div><div style="display:flex;align-items:center;gap:10px;margin-bottom:11px;"><span style="width:120px;font-size:12.5px;">Pending</span><div style="flex:1;height:9px;background:#EEF1F8;border-radius:5px;overflow:hidden;"><div style="width:6.25%;height:100%;background:linear-gradient(90deg,#D69A1F,#E8B448);border-radius:5px;"></div></div><span style="font-family:monospace;font-size:12px;width:28px;text-align:right;">1</span></div><div style="display:flex;align-items:center;gap:10px;margin-bottom:11px;"><span style="width:120px;font-size:12.5px;">Closed</span><div style="flex:1;height:9px;background:#EEF1F8;border-radius:5px;overflow:hidden;"><div style="width:0%;height:100%;background:linear-gradient(90deg,#D6483F,#E36F67);border-radius:5px;"></div></div><span style="font-family:monospace;font-size:12px;width:28px;text-align:right;">0</span></div><div style="padding-top:12px;border-top:1px dashed #E4E8F2;display:flex;justify-content:space-between;font-size:12.5px;color:#4B5870;"><span>Total Nilai</span><b style="font-family:monospace;color:#0F1B33;">Rp694.7jt</b></div></div>
+  </div>
+
+  <!-- Recap Pending -->
+  <div class="card" style="margin-top:16px;padding:0;">
+    <div class="ch" style="padding:18px 20px 14px;border-bottom:1px solid #E4E8F2;margin-bottom:0;">
+      <div style="display:flex;align-items:center;gap:10px;">
+        <span style="font-size:18px;">📋</span><h3 style="margin:0;">Recap Weekly Pending</h3>
+        <span style="background:#E7ECFC;color:#2A4DD0;font-size:11px;font-weight:700;padding:3px 9px;border-radius:999px;font-family:monospace;">0 CS</span>
+        <span style="background:#EDE9FE;color:#7C3AED;font-size:11px;font-weight:700;padding:3px 9px;border-radius:999px;font-family:monospace;">1 Settlement</span>
+      </div>
+      <span class="mt">Hanya case berstatus Pending</span>
+    </div>
+    <div style="padding:14px 20px 18px;">
+      <div class="stl"><span style="width:10px;height:10px;border-radius:50%;background:#2A4DD0;display:inline-block;"></span>CS → Settlement (0)</div>
+      <div class="tbwrap"><table class="tbl"><thead><tr><th>UID</th><th>Kategori</th><th>User's Name</th><th>IDR Amount</th><th>Asset Amount</th><th>Withdraw To</th><th>Metode Transfer</th><th>Created</th><th>Last Modified</th><th>Komentar</th></tr></thead><tbody><tr><td colspan="10" style="text-align:center;padding:28px;color:#4B5870;">✅ Tidak ada case Pending</td></tr></tbody></table></div>
+      <div class="sep">
+        <div class="stl"><span style="width:10px;height:10px;border-radius:50%;background:#7C3AED;display:inline-block;"></span>Settlement → CS (1)</div>
+        <div class="tbwrap"><table class="tbl"><thead><tr><th>UID</th><th>Name</th><th>Amount</th><th>Asset Type</th><th>Created Date</th><th>Notes</th><th>Komentar</th></tr></thead><tbody><tr>
+    <td style="font-family:monospace;font-size:11.5px;white-space:nowrap;">2700090745</td>
+    <td style="font-weight:600;white-space:nowrap;">Ir Erwin Kandacong B</td>
+    <td style="font-family:monospace;text-align:right;white-space:nowrap;">Rp11.000.393</td>
+    <td>IDR</td>
+    <td style="white-space:nowrap;">2/7/2026 21:35</td>
+    <td style="max-width:220px;overflow:hidden;text-overflow:ellipsis;">User tersebut ada transfer ke Rekening MANDIRI REKU sebesar Rp. 11.000.393, namun tidak tertera nama Rekening pengirimnya. Tolong mintakan bukti transfernya ya agar transaksinya bisa kami proses. Terima kasih.</td>
+    <td><div style="background:#F0F4FF;border-left:3px solid #2A4DD0;border-radius:7px;padding:5px 9px;font-size:12px;max-width:210px;white-space:pre-wrap;word-break:break-word;">Mutasi tidak terdapat nama pengirim sehingga settlement melkukan follow up</div></td>
+  </tr></tbody></table></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Overdue -->
+  <div class="card overdue-c" style="margin-top:16px;">
+    <div class="ch">
+      <div style="display:flex;align-items:center;gap:10px;"><span style="font-size:18px;">⏰</span><h3 style="margin:0;">Durasi Melebihi 1×24 Jam</h3>
+        <span style="background:#10B981;color:#fff;font-size:11px;font-weight:700;padding:3px 9px;border-radius:999px;font-family:monospace;">0</span></div>
+      <span class="mt">Berdasarkan Waktu Proses</span>
+    </div>
+    <div class="tbwrap"><table class="tbl"><thead><tr><th>UID</th><th>Nama User</th><th>Kategori</th><th>Status</th><th>Waktu Proses</th><th>Dibuat</th><th>Nilai IDR</th></tr></thead><tbody><tr><td colspan="7" style="text-align:center;padding:28px;color:#166534;">✅ Tidak ada case melebihi 1×24 jam</td></tr></tbody></table></div>
+  </div>
+</section>
+
+<!-- ===== CS TO SETTLEMENT ===== -->
+<section class="view" id="v-cs">
+  <div class="topbar">
+    <div><h1>CS to Settlement</h1><p>Snapshot · Filter status tersedia</p></div>
+    <span class="pill">📁 <b>15</b> case</span>
+  </div>
+  <div class="toolbar">
+    <div class="seg" id="cs-seg">
+      <button class="sb on" data-table="cs-tbl" data-status="">Semua <span class="cnt">15</span></button>
+      <button class="sb" data-table="cs-tbl" data-status="Done">Done <span class="cnt">14</span></button>
+      <button class="sb" data-table="cs-tbl" data-status="Pending">Pending <span class="cnt">0</span></button>
+      <button class="sb" data-table="cs-tbl" data-status="Closed">Closed <span class="cnt">1</span></button>
+    </div>
+    <span class="info-lbl" id="cs-info">Menampilkan 15 case</span>
+  </div>
+  <div class="tbwrap" style="border-radius:14px;box-shadow:0 1px 2px rgba(15,27,51,0.04),0 6px 18px -10px rgba(15,27,51,0.1);">
+    <table class="tbl" id="cs-tbl">
+      <thead><tr><th>UID</th><th>Status</th><th>Kategori</th><th>User's Name</th><th>IDR Amount</th><th>Created</th><th>Last Modified</th><th>Duration</th><th>Asset Type</th><th>Asset Amount</th><th>Waktu Proses</th><th>Withdraw To</th><th>Metode Transfer</th><th>Komentar</th></tr></thead>
+      <tbody><tr data-status="Done">
+    <td style="font-family:monospace;font-size:11.5px;white-space:nowrap;">1302248729</td>
+    <td><span style="display:inline-flex;align-items:center;gap:4px;padding:3px 9px;border-radius:999px;font-size:11px;font-weight:600;background:#E2F7F2;color:#0E9E86"><span style="width:5px;height:5px;border-radius:50%;background:#0E9E86;display:inline-block;"></span>Done</span></td>
+    <td style="white-space:nowrap;">Withdraw IDR</td>
+    <td style="font-weight:600;white-space:nowrap;">Herry Verdyansyah</td>
+    <td style="font-family:monospace;text-align:right;white-space:nowrap;">Rp16.814.626</td>
+    <td style="white-space:nowrap;">28/6/2026 15:43</td>
+    <td style="white-space:nowrap;">29/6/2026 13:09</td>
+    <td style="white-space:nowrap;">21:26</td>
+    <td>—</td>
+    <td style="font-family:monospace;">—</td>
+    <td style="white-space:nowrap;">3j 48m</td>
+    <td>—</td>
+    <td>—</td>
+    <td><span style="color:#9BA8BC;font-style:italic;font-size:11.5px;">—</span></td>
+  </tr><tr data-status="Done">
+    <td style="font-family:monospace;font-size:11.5px;white-space:nowrap;">3017914300</td>
+    <td><span style="display:inline-flex;align-items:center;gap:4px;padding:3px 9px;border-radius:999px;font-size:11px;font-weight:600;background:#E2F7F2;color:#0E9E86"><span style="width:5px;height:5px;border-radius:50%;background:#0E9E86;display:inline-block;"></span>Done</span></td>
+    <td style="white-space:nowrap;">Receive Coin Listed (Settlement)</td>
+    <td style="font-weight:600;white-space:nowrap;">Ikramudddin</td>
+    <td style="font-family:monospace;text-align:right;white-space:nowrap;">—</td>
+    <td style="white-space:nowrap;">29/6/2026 12:50</td>
+    <td style="white-space:nowrap;">29/6/2026 12:54</td>
+    <td style="white-space:nowrap;">0:04</td>
+    <td>TON</td>
+    <td style="font-family:monospace;">13.5</td>
+    <td style="white-space:nowrap;">3j 27m</td>
+    <td>—</td>
+    <td>—</td>
+    <td><span style="color:#9BA8BC;font-style:italic;font-size:11.5px;">—</span></td>
+  </tr><tr data-status="Done">
+    <td style="font-family:monospace;font-size:11.5px;white-space:nowrap;">1018709477</td>
+    <td><span style="display:inline-flex;align-items:center;gap:4px;padding:3px 9px;border-radius:999px;font-size:11px;font-weight:600;background:#E2F7F2;color:#0E9E86"><span style="width:5px;height:5px;border-radius:50%;background:#0E9E86;display:inline-block;"></span>Done</span></td>
+    <td style="white-space:nowrap;">Deposit USD</td>
+    <td style="font-weight:600;white-space:nowrap;">Edward Anugrah Angga</td>
+    <td style="font-family:monospace;text-align:right;white-space:nowrap;">Rp40</td>
+    <td style="white-space:nowrap;">29/6/2026 13:45</td>
+    <td style="white-space:nowrap;">29/6/2026 13:50</td>
+    <td style="white-space:nowrap;">0:05</td>
+    <td>—</td>
+    <td style="font-family:monospace;">—</td>
+    <td style="white-space:nowrap;">3j 26m</td>
+    <td>—</td>
+    <td>—</td>
+    <td><span style="color:#9BA8BC;font-style:italic;font-size:11.5px;">—</span></td>
+  </tr><tr data-status="Done">
+    <td style="font-family:monospace;font-size:11.5px;white-space:nowrap;">1848292457</td>
+    <td><span style="display:inline-flex;align-items:center;gap:4px;padding:3px 9px;border-radius:999px;font-size:11px;font-weight:600;background:#E2F7F2;color:#0E9E86"><span style="width:5px;height:5px;border-radius:50%;background:#0E9E86;display:inline-block;"></span>Done</span></td>
+    <td style="white-space:nowrap;">Deposit IDR</td>
+    <td style="font-weight:600;white-space:nowrap;">Rina Evita Royhana</td>
+    <td style="font-family:monospace;text-align:right;white-space:nowrap;">Rp1.000.000</td>
+    <td style="white-space:nowrap;">29/6/2026 16:03</td>
+    <td style="white-space:nowrap;">29/6/2026 16:34</td>
+    <td style="white-space:nowrap;">0:31</td>
+    <td>—</td>
+    <td style="font-family:monospace;">—</td>
+    <td style="white-space:nowrap;">3j 24m</td>
+    <td>—</td>
+    <td>Transfer Bank BCA</td>
+    <td><span style="color:#9BA8BC;font-style:italic;font-size:11.5px;">—</span></td>
+  </tr><tr data-status="Done">
+    <td style="font-family:monospace;font-size:11.5px;white-space:nowrap;">2678861063</td>
+    <td><span style="display:inline-flex;align-items:center;gap:4px;padding:3px 9px;border-radius:999px;font-size:11px;font-weight:600;background:#E2F7F2;color:#0E9E86"><span style="width:5px;height:5px;border-radius:50%;background:#0E9E86;display:inline-block;"></span>Done</span></td>
+    <td style="white-space:nowrap;">Deposit IDR</td>
+    <td style="font-weight:600;white-space:nowrap;">Kusnadi Saputra</td>
+    <td style="font-family:monospace;text-align:right;white-space:nowrap;">Rp57.978.444</td>
+    <td style="white-space:nowrap;">29/6/2026 17:58</td>
+    <td style="white-space:nowrap;">29/6/2026 18:58</td>
+    <td style="white-space:nowrap;">0:59</td>
+    <td>—</td>
+    <td style="font-family:monospace;">—</td>
+    <td style="white-space:nowrap;">3j 22m</td>
+    <td>—</td>
+    <td>Transfer Bank BCA</td>
+    <td><span style="color:#9BA8BC;font-style:italic;font-size:11.5px;">—</span></td>
+  </tr><tr data-status="Done">
+    <td style="font-family:monospace;font-size:11.5px;white-space:nowrap;">590385391</td>
+    <td><span style="display:inline-flex;align-items:center;gap:4px;padding:3px 9px;border-radius:999px;font-size:11px;font-weight:600;background:#E2F7F2;color:#0E9E86"><span style="width:5px;height:5px;border-radius:50%;background:#0E9E86;display:inline-block;"></span>Done</span></td>
+    <td style="white-space:nowrap;">Receive Coin Listed (Settlement)</td>
+    <td style="font-weight:600;white-space:nowrap;">Danang Jatmiko</td>
+    <td style="font-family:monospace;text-align:right;white-space:nowrap;">—</td>
+    <td style="white-space:nowrap;">29/6/2026 19:13</td>
+    <td style="white-space:nowrap;">29/6/2026 19:45</td>
+    <td style="white-space:nowrap;">0:32</td>
+    <td>IDNG</td>
+    <td style="font-family:monospace;">25.277482</td>
+    <td style="white-space:nowrap;">3j 20m</td>
+    <td>—</td>
+    <td>—</td>
+    <td><span style="color:#9BA8BC;font-style:italic;font-size:11.5px;">—</span></td>
+  </tr><tr data-status="Done">
+    <td style="font-family:monospace;font-size:11.5px;white-space:nowrap;">2938745696</td>
+    <td><span style="display:inline-flex;align-items:center;gap:4px;padding:3px 9px;border-radius:999px;font-size:11px;font-weight:600;background:#E2F7F2;color:#0E9E86"><span style="width:5px;height:5px;border-radius:50%;background:#0E9E86;display:inline-block;"></span>Done</span></td>
+    <td style="white-space:nowrap;">Deposit IDR</td>
+    <td style="font-weight:600;white-space:nowrap;">Eni Rohaeni</td>
+    <td style="font-family:monospace;text-align:right;white-space:nowrap;">Rp165.000.529</td>
+    <td style="white-space:nowrap;">1/7/2026 05:28</td>
+    <td style="white-space:nowrap;">1/7/2026 05:41</td>
+    <td style="white-space:nowrap;">0:13</td>
+    <td>—</td>
+    <td style="font-family:monospace;">—</td>
+    <td style="white-space:nowrap;">2j 46m</td>
+    <td>—</td>
+    <td>Transfer Bank Mandiri</td>
+    <td><span style="color:#9BA8BC;font-style:italic;font-size:11.5px;">—</span></td>
+  </tr><tr data-status="Done">
+    <td style="font-family:monospace;font-size:11.5px;white-space:nowrap;">2603934198</td>
+    <td><span style="display:inline-flex;align-items:center;gap:4px;padding:3px 9px;border-radius:999px;font-size:11px;font-weight:600;background:#E2F7F2;color:#0E9E86"><span style="width:5px;height:5px;border-radius:50%;background:#0E9E86;display:inline-block;"></span>Done</span></td>
+    <td style="white-space:nowrap;">Withdraw IDR</td>
+    <td style="font-weight:600;white-space:nowrap;">Moh.Ali Ma&#39;ruf</td>
+    <td style="font-family:monospace;text-align:right;white-space:nowrap;">Rp107.496</td>
+    <td style="white-space:nowrap;">1/7/2026 13:37</td>
+    <td style="white-space:nowrap;">2/7/2026 12:04</td>
+    <td style="white-space:nowrap;">22:27</td>
+    <td>—</td>
+    <td style="font-family:monospace;">—</td>
+    <td style="white-space:nowrap;">2j 38m</td>
+    <td>—</td>
+    <td>—</td>
+    <td><span style="color:#9BA8BC;font-style:italic;font-size:11.5px;">—</span></td>
+  </tr><tr data-status="Done">
+    <td style="font-family:monospace;font-size:11.5px;white-space:nowrap;">535075033</td>
+    <td><span style="display:inline-flex;align-items:center;gap:4px;padding:3px 9px;border-radius:999px;font-size:11px;font-weight:600;background:#E2F7F2;color:#0E9E86"><span style="width:5px;height:5px;border-radius:50%;background:#0E9E86;display:inline-block;"></span>Done</span></td>
+    <td style="white-space:nowrap;">Withdraw IDR</td>
+    <td style="font-weight:600;white-space:nowrap;">Muhammad Rizky Awali Muqowwam</td>
+    <td style="font-family:monospace;text-align:right;white-space:nowrap;">Rp756.703</td>
+    <td style="white-space:nowrap;">1/7/2026 15:08</td>
+    <td style="white-space:nowrap;">2/7/2026 12:05</td>
+    <td style="white-space:nowrap;">20:57</td>
+    <td>—</td>
+    <td style="font-family:monospace;">—</td>
+    <td style="white-space:nowrap;">2j 36m</td>
+    <td>—</td>
+    <td>—</td>
+    <td><span style="color:#9BA8BC;font-style:italic;font-size:11.5px;">—</span></td>
+  </tr><tr data-status="Closed">
+    <td style="font-family:monospace;font-size:11.5px;white-space:nowrap;">1186315406</td>
+    <td><span style="display:inline-flex;align-items:center;gap:4px;padding:3px 9px;border-radius:999px;font-size:11px;font-weight:600;background:#FBE7E5;color:#D6483F"><span style="width:5px;height:5px;border-radius:50%;background:#D6483F;display:inline-block;"></span>Closed</span></td>
+    <td style="white-space:nowrap;">Deposit IDR</td>
+    <td style="font-weight:600;white-space:nowrap;">Loa Ardhy Risman</td>
+    <td style="font-family:monospace;text-align:right;white-space:nowrap;">Rp100.000.405</td>
+    <td style="white-space:nowrap;">1/7/2026 15:13</td>
+    <td style="white-space:nowrap;">2/7/2026 20:50</td>
+    <td style="white-space:nowrap;">29:38</td>
+    <td>—</td>
+    <td style="font-family:monospace;">—</td>
+    <td style="white-space:nowrap;">2j 36m</td>
+    <td>—</td>
+    <td>Transfer Bank BCA</td>
+    <td><span style="color:#9BA8BC;font-style:italic;font-size:11.5px;">—</span></td>
+  </tr><tr data-status="Done">
+    <td style="font-family:monospace;font-size:11.5px;white-space:nowrap;">3345765316</td>
+    <td><span style="display:inline-flex;align-items:center;gap:4px;padding:3px 9px;border-radius:999px;font-size:11px;font-weight:600;background:#E2F7F2;color:#0E9E86"><span style="width:5px;height:5px;border-radius:50%;background:#0E9E86;display:inline-block;"></span>Done</span></td>
+    <td style="white-space:nowrap;">Deposit IDR</td>
+    <td style="font-weight:600;white-space:nowrap;">Fatmawati</td>
+    <td style="font-family:monospace;text-align:right;white-space:nowrap;">Rp105.000</td>
+    <td style="white-space:nowrap;">1/7/2026 15:58</td>
+    <td style="white-space:nowrap;">2/7/2026 10:10</td>
+    <td style="white-space:nowrap;">18:11</td>
+    <td>—</td>
+    <td style="font-family:monospace;">—</td>
+    <td style="white-space:nowrap;">2j 36m</td>
+    <td>—</td>
+    <td>Virtual Account BRI</td>
+    <td><span style="color:#9BA8BC;font-style:italic;font-size:11.5px;">—</span></td>
+  </tr><tr data-status="Done">
+    <td style="font-family:monospace;font-size:11.5px;white-space:nowrap;">1347676085</td>
+    <td><span style="display:inline-flex;align-items:center;gap:4px;padding:3px 9px;border-radius:999px;font-size:11px;font-weight:600;background:#E2F7F2;color:#0E9E86"><span style="width:5px;height:5px;border-radius:50%;background:#0E9E86;display:inline-block;"></span>Done</span></td>
+    <td style="white-space:nowrap;">Withdraw IDR</td>
+    <td style="font-weight:600;white-space:nowrap;">Eko Sugianto</td>
+    <td style="font-family:monospace;text-align:right;white-space:nowrap;">Rp764.371</td>
+    <td style="white-space:nowrap;">2/7/2026 09:59</td>
+    <td style="white-space:nowrap;">2/7/2026 12:05</td>
+    <td style="white-space:nowrap;">2:05</td>
+    <td>—</td>
+    <td style="font-family:monospace;">—</td>
+    <td style="white-space:nowrap;">2j 18m</td>
+    <td>BCA</td>
+    <td>—</td>
+    <td><span style="color:#9BA8BC;font-style:italic;font-size:11.5px;">—</span></td>
+  </tr><tr data-status="Done">
+    <td style="font-family:monospace;font-size:11.5px;white-space:nowrap;">1050340345</td>
+    <td><span style="display:inline-flex;align-items:center;gap:4px;padding:3px 9px;border-radius:999px;font-size:11px;font-weight:600;background:#E2F7F2;color:#0E9E86"><span style="width:5px;height:5px;border-radius:50%;background:#0E9E86;display:inline-block;"></span>Done</span></td>
+    <td style="white-space:nowrap;">Withdraw IDR</td>
+    <td style="font-weight:600;white-space:nowrap;">Chandra</td>
+    <td style="font-family:monospace;text-align:right;white-space:nowrap;">Rp97.700.569</td>
+    <td style="white-space:nowrap;">2/7/2026 11:03</td>
+    <td style="white-space:nowrap;">2/7/2026 15:09</td>
+    <td style="white-space:nowrap;">4:06</td>
+    <td>—</td>
+    <td style="font-family:monospace;">—</td>
+    <td style="white-space:nowrap;">2j 17m</td>
+    <td>Bank Mestika Dharma</td>
+    <td>—</td>
+    <td><span style="color:#9BA8BC;font-style:italic;font-size:11.5px;">—</span></td>
+  </tr><tr data-status="Done">
+    <td style="font-family:monospace;font-size:11.5px;white-space:nowrap;">3691995375</td>
+    <td><span style="display:inline-flex;align-items:center;gap:4px;padding:3px 9px;border-radius:999px;font-size:11px;font-weight:600;background:#E2F7F2;color:#0E9E86"><span style="width:5px;height:5px;border-radius:50%;background:#0E9E86;display:inline-block;"></span>Done</span></td>
+    <td style="white-space:nowrap;">Send Coin</td>
+    <td style="font-weight:600;white-space:nowrap;">Stefanus Andhie Pramono</td>
+    <td style="font-family:monospace;text-align:right;white-space:nowrap;">—</td>
+    <td style="white-space:nowrap;">2/7/2026 13:25</td>
+    <td style="white-space:nowrap;">2/7/2026 13:33</td>
+    <td style="white-space:nowrap;">0:08</td>
+    <td>USDT</td>
+    <td style="font-family:monospace;">399,304172</td>
+    <td style="white-space:nowrap;">2j 14m</td>
+    <td>—</td>
+    <td>—</td>
+    <td><span style="color:#9BA8BC;font-style:italic;font-size:11.5px;">—</span></td>
+  </tr><tr data-status="Done">
+    <td style="font-family:monospace;font-size:11.5px;white-space:nowrap;">2337072140</td>
+    <td><span style="display:inline-flex;align-items:center;gap:4px;padding:3px 9px;border-radius:999px;font-size:11px;font-weight:600;background:#E2F7F2;color:#0E9E86"><span style="width:5px;height:5px;border-radius:50%;background:#0E9E86;display:inline-block;"></span>Done</span></td>
+    <td style="white-space:nowrap;">Deposit IDR</td>
+    <td style="font-weight:600;white-space:nowrap;">Jodi Halim</td>
+    <td style="font-family:monospace;text-align:right;white-space:nowrap;">Rp70.000.000</td>
+    <td style="white-space:nowrap;">3/7/2026 19:25</td>
+    <td style="white-space:nowrap;">4/7/2026 06:43</td>
+    <td style="white-space:nowrap;">11:18</td>
+    <td>—</td>
+    <td style="font-family:monospace;">—</td>
+    <td style="white-space:nowrap;">1j 44m</td>
+    <td>—</td>
+    <td>Virtual Account BCA</td>
+    <td><span style="color:#9BA8BC;font-style:italic;font-size:11.5px;">—</span></td>
+  </tr></tbody>
+    </table>
+    <div class="no-result" id="cs-empty" style="display:none;">Tidak ada case dengan status ini.</div>
+  </div>
+</section>
+
+<!-- ===== SETTLEMENT TO CS ===== -->
+<section class="view" id="v-st">
+  <div class="topbar">
+    <div><h1>Settlement to CS</h1><p>Snapshot · Filter status tersedia</p></div>
+    <span class="pill">📁 <b>16</b> case</span>
+  </div>
+  <div class="toolbar">
+    <div class="seg" id="st-seg">
+      <button class="sb on" data-table="st-tbl" data-status="">Semua <span class="cnt">16</span></button>
+      <button class="sb" data-table="st-tbl" data-status="Done">Done <span class="cnt">15</span></button>
+      <button class="sb" data-table="st-tbl" data-status="Pending">Pending <span class="cnt">1</span></button>
+      <button class="sb" data-table="st-tbl" data-status="Closed">Closed <span class="cnt">0</span></button>
+    </div>
+    <span class="info-lbl" id="st-info">Menampilkan 16 case</span>
+  </div>
+  <div class="tbwrap" style="border-radius:14px;box-shadow:0 1px 2px rgba(15,27,51,0.04),0 6px 18px -10px rgba(15,27,51,0.1);">
+    <table class="tbl" id="st-tbl">
+      <thead><tr><th>UID</th><th>Status</th><th>Name</th><th>Amount</th><th>Asset Type</th><th>Created Date</th><th>Request By</th><th>Notes</th><th>Komentar</th></tr></thead>
+      <tbody><tr data-status="Done">
+    <td style="font-family:monospace;font-size:11.5px;white-space:nowrap;">2291733620</td>
+    <td><span style="display:inline-flex;align-items:center;gap:4px;padding:3px 9px;border-radius:999px;font-size:11px;font-weight:600;background:#E2F7F2;color:#0E9E86"><span style="width:5px;height:5px;border-radius:50%;background:#0E9E86;display:inline-block;"></span>Done</span></td>
+    <td style="font-weight:600;white-space:nowrap;">Teguh Prasetyo</td>
+    <td style="font-family:monospace;text-align:right;white-space:nowrap;">Rp3.000.445</td>
+    <td>IDR</td>
+    <td style="white-space:nowrap;">4/7/2026 14:44</td>
+    <td>Candice Sherly</td>
+    <td style="max-width:240px;overflow:hidden;text-overflow:ellipsis;">User lakukan transfer bank senilai Rp3.000.445 ke Mandiri Reku namun dari rekening beda nama A/N SURI HANDARINI tolong mintakan nomor rekening bank, nama lengkap pengirim, dan bukti transfer agar bisa diproses Refund IDR nya, terima kasih.</td>
+    <td><span style="color:#9BA8BC;font-style:italic;font-size:11.5px;">—</span></td>
+  </tr><tr data-status="Done">
+    <td style="font-family:monospace;font-size:11.5px;white-space:nowrap;">3996697153</td>
+    <td><span style="display:inline-flex;align-items:center;gap:4px;padding:3px 9px;border-radius:999px;font-size:11px;font-weight:600;background:#E2F7F2;color:#0E9E86"><span style="width:5px;height:5px;border-radius:50%;background:#0E9E86;display:inline-block;"></span>Done</span></td>
+    <td style="font-weight:600;white-space:nowrap;">T. Zulfan</td>
+    <td style="font-family:monospace;text-align:right;white-space:nowrap;">Rp50.000.365</td>
+    <td>IDR</td>
+    <td style="white-space:nowrap;">4/7/2026 09:52</td>
+    <td>Iersy Romauli</td>
+    <td style="max-width:240px;overflow:hidden;text-overflow:ellipsis;">Tolong informasikan ke user untuk dapat melampirkan bukti transfer deposit ke Mandiri tertera nama pengirim yang sama dengan user  ya, terima kasih.</td>
+    <td><span style="color:#9BA8BC;font-style:italic;font-size:11.5px;">—</span></td>
+  </tr><tr data-status="Done">
+    <td style="font-family:monospace;font-size:11.5px;white-space:nowrap;">3083201820</td>
+    <td><span style="display:inline-flex;align-items:center;gap:4px;padding:3px 9px;border-radius:999px;font-size:11px;font-weight:600;background:#E2F7F2;color:#0E9E86"><span style="width:5px;height:5px;border-radius:50%;background:#0E9E86;display:inline-block;"></span>Done</span></td>
+    <td style="font-weight:600;white-space:nowrap;">Ali Sofiyan</td>
+    <td style="font-family:monospace;text-align:right;white-space:nowrap;">Rp300.000</td>
+    <td>IDR</td>
+    <td style="white-space:nowrap;">4/7/2026 09:04</td>
+    <td>Iersy Romauli</td>
+    <td style="max-width:240px;overflow:hidden;text-overflow:ellipsis;">User melakukan transfer IDR 300.000 ke BCA reku, mohon dibantu untuk melampirkan bukti transfer agar deposit IDR dapat dibantu masuk, terima kasih.</td>
+    <td><span style="color:#9BA8BC;font-style:italic;font-size:11.5px;">—</span></td>
+  </tr><tr data-status="Done">
+    <td style="font-family:monospace;font-size:11.5px;white-space:nowrap;">1772329621</td>
+    <td><span style="display:inline-flex;align-items:center;gap:4px;padding:3px 9px;border-radius:999px;font-size:11px;font-weight:600;background:#E2F7F2;color:#0E9E86"><span style="width:5px;height:5px;border-radius:50%;background:#0E9E86;display:inline-block;"></span>Done</span></td>
+    <td style="font-weight:600;white-space:nowrap;">Sucahyo</td>
+    <td style="font-family:monospace;text-align:right;white-space:nowrap;">Rp5.000.763</td>
+    <td>IDR</td>
+    <td style="white-space:nowrap;">4/7/2026 01:58</td>
+    <td>Eka Prassetia</td>
+    <td style="max-width:240px;overflow:hidden;text-overflow:ellipsis;">User melakukan Deposit transfer to BCA beda nama, tolong informasikan ke usernya minta data untuk pengembalian dana yah. terima kasih</td>
+    <td><span style="color:#9BA8BC;font-style:italic;font-size:11.5px;">—</span></td>
+  </tr><tr data-status="Done">
+    <td style="font-family:monospace;font-size:11.5px;white-space:nowrap;">2587585584</td>
+    <td><span style="display:inline-flex;align-items:center;gap:4px;padding:3px 9px;border-radius:999px;font-size:11px;font-weight:600;background:#E2F7F2;color:#0E9E86"><span style="width:5px;height:5px;border-radius:50%;background:#0E9E86;display:inline-block;"></span>Done</span></td>
+    <td style="font-weight:600;white-space:nowrap;">Wahyuti</td>
+    <td style="font-family:monospace;text-align:right;white-space:nowrap;">Rp250.000.147</td>
+    <td>IDR</td>
+    <td style="white-space:nowrap;">3/7/2026 14:08</td>
+    <td>Candice Sherly</td>
+    <td style="max-width:240px;overflow:hidden;text-overflow:ellipsis;">User melakukan transfer ke Bank Mandiri Reku senilai Rp250.000.147,- namun submit form beda nominal, tolong arahkan user untuk submit Form Deposit IDR dengan nominal sesuai yang di transfer ya, terima kasih</td>
+    <td><span style="color:#9BA8BC;font-style:italic;font-size:11.5px;">—</span></td>
+  </tr><tr data-status="Pending">
+    <td style="font-family:monospace;font-size:11.5px;white-space:nowrap;">2700090745</td>
+    <td><span style="display:inline-flex;align-items:center;gap:4px;padding:3px 9px;border-radius:999px;font-size:11px;font-weight:600;background:#FCF1DA;color:#D69A1F"><span style="width:5px;height:5px;border-radius:50%;background:#D69A1F;display:inline-block;"></span>Pending</span></td>
+    <td style="font-weight:600;white-space:nowrap;">Ir Erwin Kandacong B</td>
+    <td style="font-family:monospace;text-align:right;white-space:nowrap;">Rp11.000.393</td>
+    <td>IDR</td>
+    <td style="white-space:nowrap;">2/7/2026 21:35</td>
+    <td>Farhan Baihaqi</td>
+    <td style="max-width:240px;overflow:hidden;text-overflow:ellipsis;">User tersebut ada transfer ke Rekening MANDIRI REKU sebesar Rp. 11.000.393, namun tidak tertera nama Rekening pengirimnya. Tolong mintakan bukti transfernya ya agar transaksinya bisa kami proses. Terima kasih.</td>
+    <td><div style="background:#F0F4FF;border-left:3px solid #2A4DD0;border-radius:7px;padding:5px 9px;font-size:12px;max-width:210px;white-space:pre-wrap;word-break:break-word;">Mutasi tidak terdapat nama pengirim sehingga settlement melkukan follow up</div></td>
+  </tr><tr data-status="Done">
+    <td style="font-family:monospace;font-size:11.5px;white-space:nowrap;">2700090745</td>
+    <td><span style="display:inline-flex;align-items:center;gap:4px;padding:3px 9px;border-radius:999px;font-size:11px;font-weight:600;background:#E2F7F2;color:#0E9E86"><span style="width:5px;height:5px;border-radius:50%;background:#0E9E86;display:inline-block;"></span>Done</span></td>
+    <td style="font-weight:600;white-space:nowrap;">Ir Erwin Kandacong B</td>
+    <td style="font-family:monospace;text-align:right;white-space:nowrap;">Rp99.000.475</td>
+    <td>IDR</td>
+    <td style="white-space:nowrap;">2/7/2026 20:41</td>
+    <td>Farhan Baihaqi</td>
+    <td style="max-width:240px;overflow:hidden;text-overflow:ellipsis;">User tersebut ada 2x transfer ke Rekening MANDIRI REKU sebesar Rp. 99.000.475 dan Rp. 99.000.944, namun tidak tertera nama Rekening pengirimnya. Tolong mintakan bukti transfernya ya agar transaksinya bisa kami proses. Terima kasih.</td>
+    <td><span style="color:#9BA8BC;font-style:italic;font-size:11.5px;">—</span></td>
+  </tr><tr data-status="Done">
+    <td style="font-family:monospace;font-size:11.5px;white-space:nowrap;">2666370946</td>
+    <td><span style="display:inline-flex;align-items:center;gap:4px;padding:3px 9px;border-radius:999px;font-size:11px;font-weight:600;background:#E2F7F2;color:#0E9E86"><span style="width:5px;height:5px;border-radius:50%;background:#0E9E86;display:inline-block;"></span>Done</span></td>
+    <td style="font-weight:600;white-space:nowrap;">Rini Juwita Purba</td>
+    <td style="font-family:monospace;text-align:right;white-space:nowrap;">Rp10.000.477</td>
+    <td>IDR</td>
+    <td style="white-space:nowrap;">2/7/2026 19:50</td>
+    <td>Farhan Baihaqi</td>
+    <td style="max-width:240px;overflow:hidden;text-overflow:ellipsis;">User lakukan transfer bank senilai Rp.10.000.477. ke BCA Reku namun dari rekening beda nama A/N ROMASTA SARAGIH tolong mintakan nomor rekening bank, nama lengkap pengirim, dan bukti transfer agar bisa diproses Refund IDR nya, terima kasih.</td>
+    <td><span style="color:#9BA8BC;font-style:italic;font-size:11.5px;">—</span></td>
+  </tr><tr data-status="Done">
+    <td style="font-family:monospace;font-size:11.5px;white-space:nowrap;">344909795</td>
+    <td><span style="display:inline-flex;align-items:center;gap:4px;padding:3px 9px;border-radius:999px;font-size:11px;font-weight:600;background:#E2F7F2;color:#0E9E86"><span style="width:5px;height:5px;border-radius:50%;background:#0E9E86;display:inline-block;"></span>Done</span></td>
+    <td style="font-weight:600;white-space:nowrap;">Satria Permana Sakti</td>
+    <td style="font-family:monospace;text-align:right;white-space:nowrap;">Rp49.999.036</td>
+    <td>IDR</td>
+    <td style="white-space:nowrap;">2/7/2026 10:40</td>
+    <td>Fito Afredo Gultom</td>
+    <td style="max-width:240px;overflow:hidden;text-overflow:ellipsis;">Halo team, tolong create ticket ke user ini untuk melampirkan bukti transfer dari Deposit IDR ke Mandiri Reku ya, karena di mutasi tidak terdapat keterangan nama pengirimnya, thank you.
+
+(Internal Info = nominal Deposit IDR Rp49.999.036,- ke Mandiri)</td>
+    <td><span style="color:#9BA8BC;font-style:italic;font-size:11.5px;">—</span></td>
+  </tr><tr data-status="Done">
+    <td style="font-family:monospace;font-size:11.5px;white-space:nowrap;">255000693</td>
+    <td><span style="display:inline-flex;align-items:center;gap:4px;padding:3px 9px;border-radius:999px;font-size:11px;font-weight:600;background:#E2F7F2;color:#0E9E86"><span style="width:5px;height:5px;border-radius:50%;background:#0E9E86;display:inline-block;"></span>Done</span></td>
+    <td style="font-weight:600;white-space:nowrap;">Nanik Nurusy Syafa&#39;atun</td>
+    <td style="font-family:monospace;text-align:right;white-space:nowrap;">Rp15.000.860</td>
+    <td>IDR</td>
+    <td style="white-space:nowrap;">2/7/2026 08:03</td>
+    <td>Fito Afredo Gultom</td>
+    <td style="max-width:240px;overflow:hidden;text-overflow:ellipsis;">Halo team, tolong create ticket ke user ini untuk melampirkan Nomor Rekening Bank Mandiri pengirim, karena user ini melakukan Deposit IDR ke Mandiri Reku tetapi beda nama bank dengan nama pada akun.
+
+(Internal Info = nominalnya Rp15.000.860)
+
+Sekalian mintain bukti transfernya juga yaa, thank you.</td>
+    <td><span style="color:#9BA8BC;font-style:italic;font-size:11.5px;">—</span></td>
+  </tr><tr data-status="Done">
+    <td style="font-family:monospace;font-size:11.5px;white-space:nowrap;">2182114841</td>
+    <td><span style="display:inline-flex;align-items:center;gap:4px;padding:3px 9px;border-radius:999px;font-size:11px;font-weight:600;background:#E2F7F2;color:#0E9E86"><span style="width:5px;height:5px;border-radius:50%;background:#0E9E86;display:inline-block;"></span>Done</span></td>
+    <td style="font-weight:600;white-space:nowrap;">Suyenny</td>
+    <td style="font-family:monospace;text-align:right;white-space:nowrap;">Rp5.000.066</td>
+    <td>IDR</td>
+    <td style="white-space:nowrap;">1/7/2026 20:02</td>
+    <td>Farhan Baihaqi</td>
+    <td style="max-width:240px;overflow:hidden;text-overflow:ellipsis;">User tersebut ada Transfer ke BCA Reku sebesar Rp. 5.000.066 Namun nama penigirimnya SANDI tapi berita transfernya SUYENNY. Jadi transaksi teresebut beda nama ya. Tolong bantu mintakan nomor rekening bank, nama lengkap pengirim, dan bukti transfer agar bisa diproses Refund IDR nya, terima kasih.
+
+================================================
+
+- Nama Bank: BCA
+- Nomor Rekening Pengirim: 0120322541
+- Nama pemilik rekening: SANDI</td>
+    <td><span style="color:#9BA8BC;font-style:italic;font-size:11.5px;">—</span></td>
+  </tr><tr data-status="Done">
+    <td style="font-family:monospace;font-size:11.5px;white-space:nowrap;">1186315406</td>
+    <td><span style="display:inline-flex;align-items:center;gap:4px;padding:3px 9px;border-radius:999px;font-size:11px;font-weight:600;background:#E2F7F2;color:#0E9E86"><span style="width:5px;height:5px;border-radius:50%;background:#0E9E86;display:inline-block;"></span>Done</span></td>
+    <td style="font-weight:600;white-space:nowrap;">Loa Ardhy Risman</td>
+    <td style="font-family:monospace;text-align:right;white-space:nowrap;">Rp100.000.405</td>
+    <td>IDR</td>
+    <td style="white-space:nowrap;">1/7/2026 15:17</td>
+    <td>Farhan Baihaqi</td>
+    <td style="max-width:240px;overflow:hidden;text-overflow:ellipsis;">User tersebut ada Transfer ke BCA Reku sebesar Rp. 100.000.405 Namun nama penigirmnya JURGEN LOA. Untuk memastikan pengirimnya benar user tersebut, tolong bantu mintakan Bukti transfer yang detail dan Nomor Rekening pengirim ya. Terima kasih.
+
+=============================================
+
+Rekening pengirim: 4050331135
+Nama pada rekening: Jurgen Loa
+Nama bank: BCA</td>
+    <td><span style="color:#9BA8BC;font-style:italic;font-size:11.5px;">—</span></td>
+  </tr><tr data-status="Done">
+    <td style="font-family:monospace;font-size:11.5px;white-space:nowrap;">1118486896</td>
+    <td><span style="display:inline-flex;align-items:center;gap:4px;padding:3px 9px;border-radius:999px;font-size:11px;font-weight:600;background:#E2F7F2;color:#0E9E86"><span style="width:5px;height:5px;border-radius:50%;background:#0E9E86;display:inline-block;"></span>Done</span></td>
+    <td style="font-weight:600;white-space:nowrap;">John Piter</td>
+    <td style="font-family:monospace;text-align:right;white-space:nowrap;">Rp5.050.000</td>
+    <td>IDR</td>
+    <td style="white-space:nowrap;">1/7/2026 14:39</td>
+    <td>Farhan Baihaqi</td>
+    <td style="max-width:240px;overflow:hidden;text-overflow:ellipsis;">User lakukan transfer bank senilai Rp. 5.050.000. ke BCA Reku namun dari rekening beda nama A/N NICKY tolong mintakan nomor rekening bank, nama lengkap pengirim, dan bukti transfer agar bisa diproses Refund IDR nya, terima kasih.
+
+=================================================
+
+- Nama Bank: BCA
+- Nomor Rekening Pengirim:  4810204112
+- Nama pemilik rekening: Nicky</td>
+    <td><span style="color:#9BA8BC;font-style:italic;font-size:11.5px;">—</span></td>
+  </tr><tr data-status="Done">
+    <td style="font-family:monospace;font-size:11.5px;white-space:nowrap;">3814501843</td>
+    <td><span style="display:inline-flex;align-items:center;gap:4px;padding:3px 9px;border-radius:999px;font-size:11px;font-weight:600;background:#E2F7F2;color:#0E9E86"><span style="width:5px;height:5px;border-radius:50%;background:#0E9E86;display:inline-block;"></span>Done</span></td>
+    <td style="font-weight:600;white-space:nowrap;">Aldi Damara</td>
+    <td style="font-family:monospace;text-align:right;white-space:nowrap;">Rp80.800.048</td>
+    <td>—</td>
+    <td style="white-space:nowrap;">1/7/2026 09:30</td>
+    <td>Lucia Ristania</td>
+    <td style="max-width:240px;overflow:hidden;text-overflow:ellipsis;">guys. minta tolong ke user untuk submit nominal Deposit IDR ke Bank Mandiri sesuai nominal transfer ya. terima kasih</td>
+    <td><span style="color:#9BA8BC;font-style:italic;font-size:11.5px;">—</span></td>
+  </tr><tr data-status="Done">
+    <td style="font-family:monospace;font-size:11.5px;white-space:nowrap;">409173943</td>
+    <td><span style="display:inline-flex;align-items:center;gap:4px;padding:3px 9px;border-radius:999px;font-size:11px;font-weight:600;background:#E2F7F2;color:#0E9E86"><span style="width:5px;height:5px;border-radius:50%;background:#0E9E86;display:inline-block;"></span>Done</span></td>
+    <td style="font-weight:600;white-space:nowrap;">Linagustin Santoso, ST.MBA</td>
+    <td style="font-family:monospace;text-align:right;white-space:nowrap;">Rp2.500.556</td>
+    <td>IDR</td>
+    <td style="white-space:nowrap;">30/6/2026 13:48</td>
+    <td>Ilham Hermawan Hidayat</td>
+    <td style="max-width:240px;overflow:hidden;text-overflow:ellipsis;">User Deposit IDR ke BCA Reku menggunakan Metode Setoran Tunai, dan tidak ada nama user pada Mutasi kita, boleh di mintakan bukti setoran tunainya, terima kasih.</td>
+    <td><span style="color:#9BA8BC;font-style:italic;font-size:11.5px;">—</span></td>
+  </tr><tr data-status="Done">
+    <td style="font-family:monospace;font-size:11.5px;white-space:nowrap;">3671596353</td>
+    <td><span style="display:inline-flex;align-items:center;gap:4px;padding:3px 9px;border-radius:999px;font-size:11px;font-weight:600;background:#E2F7F2;color:#0E9E86"><span style="width:5px;height:5px;border-radius:50%;background:#0E9E86;display:inline-block;"></span>Done</span></td>
+    <td style="font-weight:600;white-space:nowrap;">Novendy</td>
+    <td style="font-family:monospace;text-align:right;white-space:nowrap;">Rp8.000.148</td>
+    <td>IDR</td>
+    <td style="white-space:nowrap;">30/6/2026 02:38</td>
+    <td>Rian Anugrah Setiawan</td>
+    <td style="max-width:240px;overflow:hidden;text-overflow:ellipsis;">User ini deposit beda nama, tolong mintain info rekening pengirimnya ya buat kita refund</td>
+    <td><span style="color:#9BA8BC;font-style:italic;font-size:11.5px;">—</span></td>
+  </tr></tbody>
+    </table>
+    <div class="no-result" id="st-empty" style="display:none;">Tidak ada case dengan status ini.</div>
+  </div>
+</section>
+
+</main>
+</div>
+
+<script>
+/* ---- Tab navigation ---- */
+function sw(id,btn){
+  document.querySelectorAll('.view').forEach(v=>v.classList.remove('on'));
+  document.getElementById('v-'+id).classList.add('on');
+  document.querySelectorAll('.nb').forEach(b=>b.classList.remove('on'));
+  btn.classList.add('on');
+}
+
+/* ---- Status filter ---- */
+document.querySelectorAll('.sb').forEach(btn => {
+  btn.addEventListener('click', () => {
+    const tableId = btn.dataset.table;
+    const status  = btn.dataset.status;
+    const seg     = btn.closest('.seg');
+    const infoId  = tableId === 'cs-tbl' ? 'cs-info' : 'st-info';
+    const emptyId = tableId === 'cs-tbl' ? 'cs-empty' : 'st-empty';
+
+    // Update active button
+    seg.querySelectorAll('.sb').forEach(b => b.classList.remove('on'));
+    btn.classList.add('on');
+
+    // Filter rows
+    const rows = document.querySelectorAll('#'+tableId+' tbody tr[data-status]');
+    let visible = 0;
+    rows.forEach(row => {
+      const match = !status || row.dataset.status === status;
+      row.style.display = match ? '' : 'none';
+      if(match) visible++;
+    });
+
+    // Update info label
+    document.getElementById(infoId).textContent = 'Menampilkan ' + visible + ' case' + (status ? ' (' + status + ')' : '');
+
+    // Show/hide empty state
+    document.getElementById(emptyId).style.display = visible === 0 ? 'block' : 'none';
+    document.getElementById(tableId).style.display  = visible === 0 ? 'none'  : '';
+  });
+});
+</script>
+</body>
+</html>
